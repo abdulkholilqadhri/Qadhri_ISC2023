@@ -1,0 +1,27 @@
+
+package pemula.mase;
+
+public class PemulaMasE {
+
+   
+    public static void main(String[] args) {
+        // belajar Tipe Data Primitif day 2
+        byte variabel_a = 5;
+        short variabel_b = 12;
+        int variabel_c = 1;
+        long variabel_d = 51201;
+        float variabel_e = 59.5f;
+        double variabel_f = 165.5;
+        char gender = 'L';
+        boolean jomblo = true;
+        
+        System.out.println(variabel_a);
+        System.out.println(variabel_b);
+        System.out.println(variabel_c);
+        System.out.println(variabel_d);
+        System.out.println(variabel_e);
+        System.out.println(variabel_f);
+        System.out.println(gender);
+        System.out.println(jomblo);
+                }
+}
