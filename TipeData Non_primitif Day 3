@@ -1,0 +1,25 @@
+
+package tipedata_tidakprimitf;
+
+public class TipeData_tidakPrimitf {
+
+    public static void main(String[] args) {
+        String nama, alamat;
+        nama = " Abdul Kholil Qadhri";
+        alamat = "Tinambung";
+        System.out.println("Nama \t\t:" + nama + " \nAlamat \t\t: " + alamat);
+        Byte a = 5;
+        Short b = 12;
+        Integer c = 1;
+        System.out.println("a = " + a + " b = "+ b + " c = " + c);
+        long d = 51201;
+        Long variabel = d;
+        System.out.println("Gabungan abc \t: " + variabel);
+        Float f = 60.5f;
+        System.out.println("Berat badan \t: " + f + " kg");
+        Double g = 165.5;
+        System.out.println("Tinggi badan \t: " + g + " cm");
+        Character gender = 'L';
+        System.out.println("Gender \t\t: " + gender);
+        Boolean jomblo = true;
+        System.out.println("Stay Halal \t: " + jomblo);
