@@ -1,0 +1,34 @@
+package belajar;
+
+public class Main {
+				
+				public static void main(String[] args) {
+        String nama;
+        char inisial;
+        int umur;
+        float berat;
+        double tinggi;
+        boolean jomblo;
+        
+        //pemberian nilai ke variabel
+        nama = "abdulkholilqadhri";
+        inisial = 'K';
+        umur = 17;
+        berat = 65.5f;
+        tinggi = 165.5;
+        jomblo = true;
+        
+        //Menampilkan hasil
+        System.out.println("Namanya \t\t: " + nama );
+        System.out.println("Berinisial \t\t : " + inisial);
+        System.out.println("Umurnya \t\t : " + umur);
+        System.out.println("Beratny \t\t : " + berat);
+        System.out.println("Tinggiku \t\t :" + tinggi);
+        System.out.println("Stay halal cuy \t\t:" + jomblo);
+        
+    
+    
+
+				}
+				
+}
