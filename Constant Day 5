@@ -1,0 +1,26 @@
+package belajar;
+
+public class Main {
+				
+				public static void main(String[] args) {
+								
+        final double Tarif_a= 0.5;
+        final double Tarif_b= 0.4;
+        
+        
+        double penjualan = 1.500;
+        double pendapatan = 46.500;
+        
+        double pajakrumah= penjualan*Tarif_a;
+        double pajaktanah = pendapatan*Tarif_b;
+        
+        
+        System.out.println("ANDA DI KENAKAN PAJAK:"+pajakrumah);
+        System.out.println("ANDA DI KENAKAN PAJAK:"+ pajaktanah);
+        
+        
+    
+
+				}
+				
+}
