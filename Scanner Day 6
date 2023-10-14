@@ -1,0 +1,24 @@
+
+package belajar_inputoutput;
+
+import java.util.Scanner;
+
+public class Belajar_inputOutput {
+    public static void main(String[] args) {
+        Scanner masukan = new Scanner(System.in);
+         String a, b, c;
+         a = masukan.nextLine();
+         System.out.println("Masukan depan = ");
+         b = masukan.nextLine();
+         System.out.println("Masukan nama tengah = ");
+         c = masukan.nextLine();
+         System.out.println("Masukan nama belakang = ");
+         System.out.println(a + b + c);
+        
+        
+           
+        
+        
+    }
+    
+}
