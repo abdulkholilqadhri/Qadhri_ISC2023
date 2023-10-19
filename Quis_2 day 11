@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Masukkan nilai m:"  );
+        int m = input.nextInt();
+        
+        System.out.print("Masukkan nilai n: " );
+        int n = input.nextInt();
+        
+
+        if (m < n){
+         for (int a = m + 1; a < n; a++){
+             System.out.print(a);
+             
+           if(a < n - 1){
+               System.out.print(",");  
+           }  
+         }   
+        }
+    }
+        
+    
+}
