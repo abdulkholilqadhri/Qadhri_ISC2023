@@ -1,0 +1,47 @@
+package pemula_if;
+import java.util.Scanner;
+public class Pemula_if {
+    public static void main(String[] args) {
+        Scanner pesan = new Scanner(System.in);
+        String menu = null;
+        int pilihan, harga= 0, porsi=0;
+        System.out.println("==== Menu bakso ====");
+        System.out.println("1. Bakso tennis \n2. Bakso mercon \n3. Bakso beranak");
+        System.out.println("4. Bakso pangsit \n5. Bakso urat ");
+        System.out.print("\nPesanan \t: ");        
+        pilihan = pesan.nextInt();
+        
+        if(pilihan == 1){
+            menu = "Bakso tennis"; 
+            harga = 13000;
+       }else if(pilihan == 2){
+            menu = "Bakso mercon";
+            harga = 17000;
+       }else if(pilihan == 3){
+            menu = "Bakso beranak";
+            harga = 21000;
+       }else if(pilihan == 4){
+            menu = "Bakso pangsit"; 
+            harga = 16000;
+       }else if(pilihan == 5){
+            menu = "Bakso urat";
+            harga = 20000;
+       }
+ 
+        if(menu == null){
+            System.out.println("Orderan tak terbaca");
+        }else{
+        System.out.print("Jumlah porsi \t: ");
+        porsi = pesan.nextInt();
+        System.out.println("=============================");
+        System.out.println("Yang dipesan \t: ");
+        System.out.println(menu+ " /porsi " + " Rp." + harga);
+        harga = harga * porsi;
+        System.out.println("Total harga Rp \t: " + harga );
+            System.out.println("============================================");
+            System.out.println("Bakso Cuy");
+        }
+        
+    }
+    
+    }
