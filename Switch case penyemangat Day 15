@@ -1,0 +1,21 @@
+package janganturu_kalongga_ngoding;
+import java.util.Scanner;
+public class JanganTuru_kaloNgga_ngoding {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Input 1/2 : ");
+        int pil = input.nextInt();
+        switch(pil){
+            case 1:
+                System.out.println("semangat yah codingnya !!!!");
+                break;
+            case 2:
+                System.out.println("jangan lupa senyum ^_^ ");
+                break;
+            default:
+                System.out.println("input sesuai Rules");
+                break;
+        }
+    }
+    
+}
