@@ -1,0 +1,36 @@
+package ngoding_mas;
+import java.util.Scanner;
+public class Ngoding_mas {
+    public static void main(String[] args) {
+        long luas, harga;
+        Scanner luasTanah = new Scanner(System.in);
+        System.out.println("====Nota penjualan tanah====");
+        System.out.println("Harga jual/meter Rp. 300.000");
+        System.out.print("Luas tanah \t: ");
+        luas = luasTanah.nextInt();
+        
+        harga = luas *= 300000;
+        System.out.println("harga \t\t: Rp "+ harga);
+        if(harga < 50000000){
+            System.out.println("Harga jual tanah anda dikenakan pajak 1%");
+            long pajak = 1*harga /100;
+            System.out.println("Biaya pajak \t: "+pajak);
+            harga -= pajak;
+            System.out.println("Total biaya \t: "+harga);
+        }else if(harga>50000000 && harga < 100000000){
+            System.out.println("Harga jual tanah anda dikenakan pajak 3%");
+            long pajak = 3*harga / 100;
+            System.out.println("Biaya pajak \t: "+pajak);
+            harga -= pajak;
+            System.out.println("Total biaya \t: "+harga);
+        }else if(harga>100000000){
+            System.out.println("Harga jual tanah anda dikenakan pajak 5%");
+            long pajak = 3*harga / 100;
+            System.out.println("Biaya pajak \t: "+pajak);
+            harga -= pajak;
+            System.out.println("Total biaya \t: "+harga);
+        }
+       
+    }
+    
+}
