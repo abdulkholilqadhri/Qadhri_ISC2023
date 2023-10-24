@@ -1,0 +1,39 @@
+
+package pemulacupu;
+import java.util.Scanner;
+public class Janganlupangoding {
+    public static void main(String[] args) {
+        Scanner masukan = new Scanner(System.in);
+        double a, b, c, d, e, f, g, h;
+        System.out.print("Matematika \t: ");
+        a = masukan.nextDouble();
+        
+        System.out.print("Fisika \t\t: ");
+        b = masukan.nextDouble();
+        
+        System.out.print("DDP \t\t: ");
+        c = masukan.nextDouble();
+        
+        System.out.print("Agama \t\t: ");
+        d = masukan.nextDouble();
+        
+        System.out.print("PSTI \t\t: ");
+        e = masukan.nextDouble();
+        h = 75;
+        f = a+b+c+d+e;
+        g = f / 5;
+        System.out.println("================");
+        System.out.println("Nilai KKM \t: "+h);
+        System.out.println("Nilai anda \t: "+g);
+        if(g >= h){
+            System.out.println("Selamat anda TUNTAS ^_^");
+        }else{
+            System.out.println("Maaf anda RUNGKAD T_T");
+        }
+        String predikat = g >= 85 ?"Anda mendapat predikat >CUMLAUDE<":"Belajar lagi";
+        System.out.println(predikat);
+        
+    
+    }
+    
+}
