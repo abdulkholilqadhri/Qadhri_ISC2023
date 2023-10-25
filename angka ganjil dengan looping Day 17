@@ -1,0 +1,29 @@
+package janganturu_kalongga_ngoding;
+import java.util.Scanner;
+public class JanganTuru_kaloNgga_ngoding {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int awal, akhir;
+        System.out.println("Output angka Ganjil");
+        System.out.print("Angka awal : ");
+        awal = input.nextInt();
+        System.out.print("Angk akhir : ");
+        akhir = input.nextInt();
+        if(awal <= akhir){
+            for (int i = awal; i <= akhir; i++) {
+            int hasil = i % 2;
+            if(hasil==1){
+            System.out.print(i+ ",");
+            } 
+        }
+            
+     }else
+            System.out.println("salah");
+    
+       
+        
+        
+        
+    }
+    
+}
