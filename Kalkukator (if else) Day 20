@@ -1,0 +1,99 @@
+package kalkulator;
+import java.util.Scanner;
+public class Kalkulator {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int a, angkaPertama, angkaKedua;
+        String operasi;
+        System.out.println("|================================================|");
+        System.out.println("|                     KALKULATOR                 |");
+        System.out.println("|================================================|");
+        System.out.println("|                  1.PENJUMLAHAN                 |");
+        System.out.println("|                  2.PENGURANGAN                 |");
+        System.out.println("|                  3.PERKALIAN                   |");
+        System.out.println("|                  4.PEMBAGIAN                   |");
+        System.out.println("|                  5.MODULUS                     |");
+        System.out.println("|================================================|");
+        System.out.print(  " Pilih operasi \t\t: ");
+        a = input.nextInt();
+        
+        int pilihan = a;
+        if(pilihan==1){
+            System.out.println("|================================================|");
+            System.out.println("|>>>Pengoperasian yang anda pilih Penjumlahan<<<<|");
+            System.out.println("|================================================|");
+            System.out.print(" Input bilangan pertama : ");
+            int pertama = input.nextInt();
+            System.out.print(" Input bulangan kedua   : ");
+            int kedua = input.nextInt();
+            int hasil = pertama + kedua;
+            System.out.println("|================================================|");
+            System.out.println("|                       HASIL                    |");
+            System.out.println("|================================================|");
+            System.out.println("  "+pertama+" + "+kedua+" = "+hasil);
+            System.out.println("|================================================|");
+        }else if(pilihan==2){
+            System.out.println("|================================================|");
+            System.out.println("|>>>Pengoperasian yang anda pilih Pengurangan<<<<|");
+            System.out.println("|================================================|");
+            System.out.print(" Input bilangan pertama : ");
+            int pertama = input.nextInt();
+            System.out.print(" Input bulangan kedua   : ");
+            int kedua = input.nextInt();
+            int hasil = pertama - kedua;
+            System.out.println("|================================================|");
+            System.out.println("|                       HASIL                    |");
+            System.out.println("|================================================|");
+            System.out.println("  "+pertama+" - "+kedua+" = "+hasil);
+            System.out.println("|================================================|");
+        }else if(pilihan==3){
+            System.out.println("|================================================|");
+            System.out.println("|>>>>Pengoperasian yang anda pilih Perkalian<<<<<|");
+            System.out.println("|================================================|");
+            System.out.print(" Input bilangan pertama : ");
+            int pertama = input.nextInt();
+            System.out.print(" Input bulangan kedua   : ");
+            int kedua = input.nextInt();
+            int hasil = pertama * kedua;
+            System.out.println("|================================================|");
+            System.out.println("|                       HASIL                    |");
+            System.out.println("|================================================|");
+            System.out.println("  "+pertama+" x "+kedua+" = "+hasil);
+            System.out.println("|================================================|");
+        }else if(pilihan==4){
+            System.out.println("|================================================|");
+            System.out.println("|>>>>Pengoperasian yang anda pilih Pembagian<<<<<|");
+            System.out.println("|================================================|");
+            System.out.print(" Input bilangan pertama : ");
+            double pertama = input.nextInt();
+            System.out.print(" Input bulangan kedua   : ");
+            double kedua = input.nextInt();
+            double hasil = pertama / kedua;
+            System.out.println("|================================================|");
+            System.out.println("|                       HASIL                    |");
+            System.out.println("|================================================|");
+            System.out.println("  "+pertama+" : "+kedua+" = "+hasil);
+            System.out.println("|================================================|");
+        }else if(pilihan==5){
+            System.out.println("|================================================|");
+            System.out.println("|>>>>>Pengoperasian yang anda pilih Modulus<<<<<<|");
+            System.out.println("|================================================|");
+            System.out.print(" Input bilangan pertama : ");
+            int pertama = input.nextInt();
+            System.out.print(" Input bulangan kedua   : ");
+            int kedua = input.nextInt();
+            double hasil = pertama % kedua;
+            System.out.println("|================================================|");
+            System.out.println("|                       HASIL                    |");
+            System.out.println("|================================================|");
+            System.out.println("  "+pertama+" % "+kedua+" = "+hasil);
+            System.out.println("|================================================|");
+        }else{
+            System.out.println("|================================================|");
+            System.out.println("|             Inputan anda tak terbaca           |");
+            System.out.println("|================================================|");
+        }
+         
+    }      
+    
+}
