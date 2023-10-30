@@ -1,0 +1,16 @@
+package main;
+import java.util.Scanner;
+public class Main {
+public static void main(String[] args) {
+    System.out.print("Masukkan batasan angka : ");
+    Scanner masuk = new Scanner(System.in);
+    int a = masuk.nextInt();
+    int jumlah = 1;
+    do{
+        System.out.print(jumlah+" ");
+        jumlah++;
+       } while(jumlah<a);
+    
+    }
+    
+}
