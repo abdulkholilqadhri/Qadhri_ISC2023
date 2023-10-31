@@ -1,0 +1,19 @@
+package tugas_dari_kklisa;
+import java.util.Scanner;
+public class Tugas_dari_kkLisa {
+    public static void main(String[] args) {
+    System.out.print("Masukkan batasan angka : ");
+    Scanner masuk = new Scanner(System.in);
+    int a = masuk.nextInt();
+    int jumlah = 3;
+    do{
+        System.out.print(jumlah+" ");
+        jumlah+=3;
+       } while(jumlah<a);
+    
+    }
+    
+}
+    
+    
+
