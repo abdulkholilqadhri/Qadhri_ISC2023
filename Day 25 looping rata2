@@ -1,0 +1,25 @@
+package looping;
+import java.util.Scanner;
+public class Looping {
+    public static void main(String[] args) {
+        Scanner masuk = new Scanner(System.in);
+        System.out.print("jumlah nilai yang ingin dimasukan = ");
+        String predikat = null;
+        double a = 0, total = 0, rerata = 0;
+        int nilai = masuk.nextInt();
+        System.out.println("------------------------------------");
+        for (int i = 1; i <= nilai; i++) {
+            System.out.print("Masukkan nilai "+i+" \t: ");
+            a = masuk.nextDouble();
+            total += a;
+          
+        }
+        rerata = total / nilai;
+        predikat = rerata >= 80 ? "Cumlaude":"Belajar lebih giat lagi";
+        System.out.println("====================================");
+        System.out.println("Jumlah nilai anda \t: "+ total);
+        System.out.println("Rerata nilai anda \t: "+rerata);
+        System.out.println("Predikat anda \t : "+predikat);
+        
+         }
+}
