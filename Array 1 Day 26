@@ -1,0 +1,11 @@
+package array_larik;
+import java.util.Scanner;
+public class Array_larik {
+    public static void main(String[] args) {
+        Scanner masuk = new Scanner(System.in);
+        
+        String[] nama = {"Gedry","Qadhri","Arill,"};
+                System.out.println("Buaya darat : "+nama[0]);
+    }
+    
+}
