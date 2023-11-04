@@ -1,0 +1,31 @@
+package main;
+import java.util.*;
+public class Main {
+public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    int x1, x2, y1, y2, jarak;
+    System.out.print("Masukan x1 : ");
+        x1 = input.nextInt();
+    System.out.print("Masukan y1 : ");
+        y1 = input.nextInt();
+    System.out.print("Masukan x2 : ");
+        x2 = input.nextInt();
+    System.out.print("Masukan y2 : ");
+        y2 = input.nextInt();
+        
+        jarak = (x1-x2)+(y1-y2);
+    if(jarak <= 0){
+        System.out.print("Jarak : "+jarak*-1);
+    }else if(jarak>=0){
+        System.out.println("jarak = "+jarak);
+
+       
+   
+    }
+    
+}
+        }
+
+    
+
+    
