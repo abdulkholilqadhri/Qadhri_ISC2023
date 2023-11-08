@@ -1,0 +1,25 @@
+package semangat;
+
+import java.util.*;
+
+public class Semangat {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan angka : ");
+        int angka = input.nextInt();
+        int hasil = angka;
+        for (int i = 1; i <= angka; i++) {
+            System.out.print(i);
+            if(i!=angka){
+                System.out.print(" + ");
+            }
+            if(angka != i){
+             hasil += i;    
+            }
+             
+        }
+        System.out.println(" = "+ hasil);
+        System.out.println("");
+    }
+    
+}
