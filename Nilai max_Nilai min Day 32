@@ -1,0 +1,27 @@
+package semangat;
+
+import java.util.*;
+
+public class Semangat {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int jml, nilai, min = 1000, max = 0;
+        System.out.print("jumlah nilai : ");
+        jml = input.nextInt();
+        System.out.println("=================");
+        for (int i = 1; i <= jml; i++) {
+            System.out.print("Nilai "+i+" : ");
+            nilai = input.nextInt();
+            if(nilai > max){
+                max = nilai;
+            }
+            if(nilai < min){
+                min = nilai;
+            }
+        }
+        System.out.println("=================");
+        System.out.println("Nilai maximal : "+ max);
+        System.out.println("Nilai minimum : "+ min);
+    }
+    
+}
