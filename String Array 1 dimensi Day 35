@@ -1,0 +1,14 @@
+package _4mpl0p_y0ok;
+import java.util.*;
+public class _4mpl0p_y0ok {
+    public static void main(String[] args) {
+        Scanner $ = new Scanner(System.in);
+        System.out.print("Manusia Unik : ");
+        String [] a = {"Gedry", "Arill", "Taufik", "Abid", "Jaenuddin", "Aco", "Rezki", "RAhmat", "Rian"};
+        System.out.println(a[2]);
+    
+        }
+        
+    }
+    
+
