@@ -1,0 +1,24 @@
+import java.util.Scanner;
+ class Main {
+    
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan jml indeks : ");
+        int jml = input.nextInt();
+        System.out.println("======================");
+        int [] a = new int[jml];
+        for(int i = 0;i < jml; i++){
+            System.out.print("indeks ke "+i+" : ");
+            a[i] = input.nextInt();
+        }
+        System.out.println("=======Out put=========");
+        for(int i= 0; i < jml ; i++){
+            System.out.print(a[i]+" ");
+        }
+    }
+ }
+        
+        
+ 
+    
+    
