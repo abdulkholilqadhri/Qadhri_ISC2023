@@ -1,0 +1,21 @@
+package main;
+public class Main {
+    
+    public static void main(String[] args) {
+        
+        int[] Q = {12, 21, 36, 18, 26};
+        int jumlah = Q.length;
+        int max = Q[0];
+        
+        for(int q = 0 ; q < jumlah; q++){	
+            System.out.print(Q[q]+" ");
+            if(Q[q] > max){
+                max = Q[q];
+            }
+            
+        }System.out.print("");
+        System.out.print("max = "+max);
+        
+    }
+    
+}
