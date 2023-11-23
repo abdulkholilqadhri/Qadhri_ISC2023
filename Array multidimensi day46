@@ -1,0 +1,12 @@
+package day46;
+
+public class Day46 {
+
+    public static void main(String[] args) {
+        //First date Array multidimensi ^_^
+        String [][] nama ={ {"Gedry","\t (Dayak)"},{"Taufik","\t (Jawa)"}};
+        System.out.println(nama[0][0]+nama[0][1]);
+        System.out.println(nama[1][0]+nama[1][1]);
+    }
+    
+}
