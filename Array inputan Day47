@@ -1,0 +1,27 @@
+package day47;
+
+import java.util.Scanner;
+
+public class day47 {
+
+    public static void main(String[] args) {
+        Scanner rian = new Scanner (System.in);
+        System.out.println("INPUT :");
+        System.out.println("===================");
+int jumlah_indek = 5;
+int [] c = new int [jumlah_indek];
+        for (int i = 0; i < jumlah_indek; i++) {
+            System.out.print("indek ke "+i+" : ");
+            c[i] = rian.nextInt();
+            
+        }
+        System.out.println("===========Out put ============");
+        for (int i = 0; i < jumlah_indek; i++) {
+            System.out.print("["+c[i]+"]"+" ");
+        }
+        System.out.println("");
+      
+
+    }
+    
+}
