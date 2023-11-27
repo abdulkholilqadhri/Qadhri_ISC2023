@@ -1,0 +1,23 @@
+package codingwar_finalround;
+
+import java.util.Scanner;
+
+public class soal_nomor2 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan batas : ");
+        int batas = input.nextInt();
+        int jumlah = 0;
+        for (int i = 1; i <= batas; i++) {
+            
+            if( i%3==0){
+             jumlah++;
+            }
+        }
+        System.out.println("============================");
+        System.out.println("Jumlah angka yang bisa dibagi 3 sebanyak "+jumlah);
+   
+    }
+    
+}
