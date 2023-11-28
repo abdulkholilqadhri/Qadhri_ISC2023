@@ -1,0 +1,22 @@
+package main;
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukan jumlah inputan : ");
+        String [] nama = new String[input.nextInt()];
+        for(int i = 0;i<nama.length;i++){
+            System.out.print((i+1)+".Masukkan nama : ");
+            nama[i] = input.next();
+        }
+        System.out.println("============Boss Sawit============");
+        for(int i = 0;i<nama.length;i++){
+            System.out.print("["+nama[i]+"]"+" ");
+            
+            
+        }
+    }
+    
+}
