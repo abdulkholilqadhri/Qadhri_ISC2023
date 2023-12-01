@@ -1,0 +1,19 @@
+package javaapplication53;
+
+import java.util.Scanner;
+
+public class JavaApplication53 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int gaji,lembur,bersih;
+        System.out.print("Masukan gaji pokok \t: ");
+        gaji = input.nextInt();
+        System.out.print("Lama lembur \t\t: ");
+        lembur = input.nextInt();
+        lembur *= 55000;
+        bersih = lembur + gaji;
+        System.out.println("Gaji bersih \t\t: "+bersih);
+    }
+    
+}
