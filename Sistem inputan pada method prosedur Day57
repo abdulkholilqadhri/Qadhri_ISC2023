@@ -1,0 +1,18 @@
+package javaapplication53;
+
+import java.util.Scanner;
+
+public class day_52 {
+    public static void belajar(String nama,int angkatan){
+        System.out.println(nama+" adalah mahasiswa angkatan "+angkatan);
+    }
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Nama      : ");
+        String nm = input.nextLine();
+        System.out.print("Angkatan  : ");
+        int umr = input.nextInt();
+        System.out.println("======Output======");
+        belajar(nm,umr);
+    }
+}
