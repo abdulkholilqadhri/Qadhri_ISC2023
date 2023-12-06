@@ -1,0 +1,28 @@
+package hahahah;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(" baris: ");
+        int a = scanner.nextInt();
+        System.out.print(" kolom: ");
+        int b = scanner.nextInt();
+        int[][] array2D = new int[a][b];
+        System.out.println(" nilai elemen :");
+
+        for (int i = 0; i < a; i++) {
+            for (int j = 0; j < b; j++) {
+                System.out.print(" ");
+                array2D[i][j] = scanner.nextInt();
+                }
+        }
+        System.out.println("model array");
+        for (int i = 0; i < a; i++) {
+            for (int j = 0; j < b; j++) {
+                System.out.print(array2D[i][j] + " ");
+            }
+            System.out.println();
+        }
+        scanner.close();
+    }
+}
