@@ -1,0 +1,19 @@
+package javaapplication64;
+
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class JavaApplication64 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan jumlah : ");
+        String [] nama = new String[input.nextInt()];
+        for (int i = 0; i < nama.length; i++) {
+            System.out.print("Masukan nama : ");
+            nama [i]= input.next();
+        }
+        System.out.print(Arrays.toString(nama)+" ");
+    }
+    
+}
