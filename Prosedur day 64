@@ -1,0 +1,14 @@
+package nanana;
+import java.util.Scanner;
+public class Main {
+    public static void keti_angkatan_2023 (){
+        System.out.println("kelas A : Nurmadinah ");
+        System.out.println("kelas B : Ihksan ");
+        System.out.println("kelas C : jainuddin ");
+        System.out.println("kelas D : Gedry ");
+        System.out.println("kelas E : RendiAwan ");
+    }
+    public static void main(String[] args) {
+        keti_angkatan_2023();
+    }   
+}
