@@ -1,0 +1,40 @@
+package belajar_1;
+
+import java.util.Scanner;
+
+public class persegi {
+    public static int luas(int s){
+        int L = s*s;
+        return L;
+    }
+    
+    public static int keliling(int s){
+        int K = 4*s;
+        return K;
+    }
+    
+    public static void luasPersegi(int s){
+        System.out.println("  L = S x S");
+        System.out.println("  L = "+s+" x "+s);
+        System.out.println("  L = "+luas(s));
+    }
+    
+    public static void kelilingPersegi(int s){
+        System.out.println("  K = 4 x S");
+        System.out.println("  K = 4 x "+s);
+        System.out.println("  K = "+keliling(s));
+    }
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int s;
+        System.out.println("|=============================|");
+        System.out.println("|  Keliling dan Luas Persegi  |");
+        System.out.println("|=============================|");
+        System.out.print("  Masukan sisi : ");
+        s = input.nextInt();
+        System.out.println("|=============================|");
+        luasPersegi(s);
+        System.out.println("");
+        kelilingPersegi(s);
+    }
+}
