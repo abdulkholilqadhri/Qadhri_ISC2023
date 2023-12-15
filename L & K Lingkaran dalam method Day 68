@@ -1,0 +1,40 @@
+package belajar_1;
+
+import java.util.Scanner;
+
+public class lingkaran {
+    public static double Llingkaran(double phi, double r ){
+        double L = phi * r *r;
+        return L;
+    }
+    
+    public static void L2lingkaran(double phi, double r){
+        System.out.println(" L = phi x r x r");
+        System.out.println(" L = "+phi+" x "+r+" x "+r);
+        System.out.println(" L = "+Llingkaran(phi,r));
+    }
+    
+    public static double Klingkaran(double phi, double r){
+        double K = 2 * phi * r;
+        return K;
+    }
+    
+    public static void K2lingkaran(double phi, double r ){
+        System.out.println(" K = 2 x phi x r");
+        System.out.println(" K = 2 x "+phi+" x "+r);
+        System.out.println(" K = "+Klingkaran(phi,r));
+    }
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        final double phi = 3.14;
+        System.out.println("|==========================|");
+        System.out.println("|       L & K Lingkaran    |");
+        System.out.println("|==========================|");
+        System.out.print(" Masukan jari-jari : ");
+        double r = input.nextDouble();
+        System.out.println("|==========================|");
+        L2lingkaran(phi,r);
+        System.out.println("");
+        K2lingkaran(phi,r);
+    }
+}
