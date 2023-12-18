@@ -1,0 +1,17 @@
+package main;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        int jumlah = 0;
+        System.out.print("Angka : ");
+        int [] a={15,12,36,40};
+        for(int i = 0;i<a.length;i++){
+            System.out.print(a[i]+", ");
+            jumlah += a[i];
+        }
+        System.out.println("");
+        System.out.println("Hasil : "+jumlah);
+    }
+    
+}
