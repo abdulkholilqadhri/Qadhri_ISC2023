@@ -1,0 +1,35 @@
+package javaapplication70;
+import java.util.*;
+public class JavaApplication70 {
+
+    public static void main(String[] args) {
+       Scanner input = new Scanner (System.in);
+       int p,l,luas,pajak=0;
+       
+        int HargaJual = 300000;
+        System.out.print("Masukan panjang  tanah : ");
+        p = input.nextInt();
+        System.out.print("Masukan lebar    tanah : ");
+        l = input.nextInt();
+        luas = (p*l)*HargaJual;
+        System.out.print(luas);
+        System.out.println("");
+       
+        if (luas >= 50000000 && luas <100000000) {
+            System.out.println("dikenakan pajak 3%");
+            pajak = (int) ((double) 0.03 * luas);
+            System.out.println("pajak = "+pajak);
+            System.out.println("hasil bersih 1 :  "+(luas-pajak));
+        }else if(luas >= 100000000){
+             System.out.println("dikenakan pajak 5%");
+            pajak = (int) ((double) 0.05 * luas);
+            System.out.println("pajak = "+pajak);
+            System.out.println("hasil bersih 2:  "+(luas-pajak));
+        }else if(luas < 50000000){
+             System.out.println("dikenakan pajak 1%");
+            pajak = (int) ((double) 0.01 * luas);
+            System.out.println("pajak = "+pajak);
+            System.out.println("hasil bersih 3:  "+(luas-pajak));
+        }
+    }
+}
