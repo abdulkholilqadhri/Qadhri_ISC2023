@@ -1,0 +1,28 @@
+package belajar_1;
+
+import java.util.Scanner;
+
+public class Belajar {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int split = 1;
+        System.out.print("awal : ");
+        int awal = input.nextInt();
+        System.out.print("Akhir : ");
+        int akhir = input.nextInt();
+        while(awal <= akhir){
+            int hasil = awal %2;
+            if(hasil == 0){
+                System.out.print(awal+" ");
+                if(split==5){
+                    System.out.println("");
+                    split = 0;
+                } 
+                split++;
+            }
+            awal++;
+            
+        }
+        System.out.println("");
+    }
+}
