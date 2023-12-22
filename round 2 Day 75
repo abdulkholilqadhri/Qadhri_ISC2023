@@ -1,0 +1,28 @@
+package codingwar_round2;
+
+import java.util.Scanner;
+
+public class soal_3 {
+    //Round2
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int gaji, harga, kost, tabungan,kebutuhan;
+        double total;
+        System.out.print("Harga Komputer \t: Rp.");
+        harga = input.nextInt();
+        System.out.print("Gaji/bulan \t: Rp.");
+        gaji = input.nextInt();
+        System.out.print("Biaya kost \t: Rp.");
+        kost = input.nextInt();
+        System.out.print("Max uang tabungan/bulan : Rp.");
+        tabungan = input.nextInt();
+        total =harga/tabungan;
+        System.out.println("==================================");
+        System.out.println("- selama "+total+" bulan");
+        kebutuhan = (gaji - kost)-tabungan;
+        System.out.println("- Uang untuk kebutuhan Dilan Rp."+kebutuhan);
+   
+    }
+}
+    
+
