@@ -1,0 +1,14 @@
+
+/*Buat satu variabel bertipe data float yg bernilai 2.0 ,
+dan ketika panggil maka yg tercetak bernilai 4.0*/
+
+ ‎package latihan;
+
+public class latihan {
+    
+    public static void main(String[] args) {
+        float a = 2.0f;
+        System.out.println(a+a);
+    }
+    
+}
