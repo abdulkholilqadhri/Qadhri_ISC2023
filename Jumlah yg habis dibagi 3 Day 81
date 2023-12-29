@@ -1,0 +1,21 @@
+package war;
+
+import java.util.Scanner;
+
+public class War {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int jumlah = 0;
+        System.out.print("Masukan batas : ");
+        int batas = input.nextInt();
+        for (int i = 1; i <= batas; i++) {
+            if(i%3==0){
+                jumlah++;
+            }
+        }
+        System.out.println("Angka yang bisa dibagi 3 dari 1 sampai "+batas+
+                " berjumlah "+jumlah);
+    }
+    
+}
