@@ -1,0 +1,24 @@
+package main;
+import java.util.*;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int fn, fn1, fn2,a;
+        System.out.print("Masukan angka : ");
+        a = input.nextInt();
+        fn2 = 0;
+        fn1 = 1;
+        fn = 1;
+        for(int i = 1 ; i <= a ; i++){
+            System.out.println(fn+" deret fibonacci ke "+i);
+            fn = fn1 + fn2;
+            fn2 = fn1;
+            fn1 = fn;
+            
+        }
+    }
+}
+
+    
