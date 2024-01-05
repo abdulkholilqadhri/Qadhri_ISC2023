@@ -1,0 +1,28 @@
+package javaapplication66;
+
+import java.util.Scanner;
+
+public class JavaApplication66 {
+
+    public static void main(String[] args) {
+        Scanner input1 = new Scanner(System.in);
+        System.out.print("Masukan jumlah manusianya : ");
+        String nama [][] = new String [input1.nextInt()][2];
+        for (int i = 0; i < nama.length; i++) {
+            Scanner input2 = new Scanner(System.in);
+            System.out.print("Masukan nama : ");
+            nama[i][0] = input2.nextLine();
+            System.out.print("Masukan hobi : ");
+            nama[i][1] = input2.nextLine();
+            System.out.println("=====================");
+        }
+        System.out.println("==============Out put================");
+        System.out.println("Nama\t\t\t\tHobi");
+        System.out.println("----"+"\t\t\t\t"+"----");
+        for (int i = 0; i < nama.length; i++) {
+            System.out.println(nama[i][0]+"\t\t\t\t"+nama[i][1]);
+        }
+    
+    }
+    
+}
