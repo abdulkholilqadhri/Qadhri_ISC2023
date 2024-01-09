@@ -1,0 +1,36 @@
+package javaapplication68;
+import java.lang.StringBuilder;
+public class JavaApplication68 {
+
+    public static void main(String[] args) {
+        System.out.println("Output stringBuilder");
+        System.out.println("=====================");
+        StringBuilder input = new StringBuilder("Haii");
+        print(input);
+        
+        input.append(" teman-teman");
+        print(input);
+        
+        input.append(" semuanya");
+        print(input);
+        
+        input.insert(25, "  Selamat malam");
+        print(input);
+        
+        input.setCharAt(25, '!');
+        print(input);
+        
+        input.replace(5, 16, "kawan-kawan");
+        print(input);
+        
+        System.out.println("\n");
+        System.out.println("Output String literal");
+        System.out.println("=====================");
+        String kata = input.toString();
+        System.out.println("Output : "+kata);
+    }
+    private static void print(StringBuilder input){
+        System.out.println("Output : "+input);
+    }
+    
+}
