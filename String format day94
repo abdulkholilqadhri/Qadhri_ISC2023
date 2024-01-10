@@ -1,0 +1,12 @@
+package javaapplication69;
+
+public class JavaApplication69 {
+
+    public static void main(String[] args) {
+        String nama = "Fadhlur";
+        float  i = 3.5738377298f;
+        
+        System.out.printf("IPK %1$s adalah %2$+5.2f\n",nama,i);
+    }
+    
+}
