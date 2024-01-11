@@ -1,0 +1,17 @@
+package javaapplication70;
+
+import java.util.Scanner;
+
+public class JavaApplication70 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+            System.out.print("Masukan nama : ");
+            String nama = input.nextLine();
+            System.out.print("Masukan ipk : ");
+            float ipk = input.nextFloat();
+            System.out.printf("Nama %1$s memiliki IPK  %2$+5.2f\n",nama,ipk);
+            
+    }
+    
+}
