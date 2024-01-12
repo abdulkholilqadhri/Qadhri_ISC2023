@@ -1,0 +1,38 @@
+package javaapplication65;
+
+import java.util.Scanner;
+
+public class NewClass {
+    public static void main(String[] args) {
+         Scanner input = new Scanner(System.in);
+        double a,b,hasil;
+        char operator;
+        System.out.print("Masukan angka pertama\t: ");
+        a = input.nextInt();
+        System.out.print("Operator\t\t: ");
+        operator = input.next().charAt(0);
+        System.out.print("Masukan angka kedua\t: ");
+        b = input.nextInt();
+        System.out.println("===========================");
+        switch(operator){
+            case '+':
+                hasil = a + b;
+                System.out.println("Jumlah\t\t: "+hasil);
+                break;
+            case '-':
+                hasil = a - b;
+                System.out.println("Jumlah\t\t: "+hasil);
+                break;
+            case '*':
+                hasil = a * b;
+                System.out.println("Jumlah\t\t: "+hasil);
+                break;
+            case '/':
+                hasil = a / b;
+                System.out.println("Jumlah\t\t: "+hasil);
+                break;
+            default :
+                System.out.println("Operator salah");
+        }
+    }
+}
