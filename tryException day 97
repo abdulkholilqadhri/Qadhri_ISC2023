@@ -1,0 +1,25 @@
+package javaapplication71;
+
+import java.util.Scanner;
+
+public class JavaApplication71 {
+
+    public static void main(String[] args) {
+        int [] a = {1,2,3,4,5};
+        
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan index : ");
+        int index = input.nextInt();
+        
+        try {
+            System.out.printf("Index ke %d adalah %d\n\n",index,a[index]);
+        } catch (Exception e) {
+            System.err.println("Index yang anda input tidak ada");
+        } finally {
+            System.out.println("Program selesai\n");
+            
+        }
+        
+    }
+    
+}
