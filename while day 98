@@ -1,0 +1,25 @@
+package javaapplication65;
+
+import java.util.Scanner;
+
+public class NewClass1 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int a,b,hasil=0;
+        System.out.print("Masukan nilai awal : ");
+        a = input.nextInt();
+        System.out.print("Masuka nilai akhir : ");
+        b = input.nextInt();
+        while(a<=b){
+            System.out.print(a);
+            if(a<b){
+            System.out.print(" + ");               
+            }
+            if(a==b){
+                System.out.print(" = ");
+            }
+            hasil += a++;
+        }
+        System.out.println(hasil);
+    }
+}
