@@ -1,0 +1,19 @@
+package javaapplication73;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class JavaApplication73 {
+
+    public static void main(String[] args) throws IOException {
+        FileReader input = new FileReader("input.txt");
+        BufferedReader masuk = new BufferedReader(input);
+        
+        masuk.mark(200);
+        System.out.println(masuk.readLine());
+        
+        
+    }
+    
+}
