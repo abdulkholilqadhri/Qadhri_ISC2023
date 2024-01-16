@@ -1,0 +1,46 @@
+
+package javaapplication74;
+
+
+public class JavaApplication74 {
+
+    
+    public static void main(String[] args) {
+         String[] a = {
+            "terima ",
+            "kasih ",
+            "untuk ",
+            "100 ",
+            "harinya ",
+            "Kk Afrizal ",
+            "& ",
+            "Kk Halisa ",
+            "^_^\n\n"
+        };
+
+        try {
+            
+            for (String b : a) {
+                System.out.print(b);
+                Thread.sleep(1000); 
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+         
+        }
+        
+    
+        
+        String c = "^o^ agenda makan2nya ditunggu yah kk ^o^\n";
+        System.out.printf("%48s",c);
+    }
+}
+    
+    
+
+
+    
+
+
+    
+
